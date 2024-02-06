@@ -1,5 +1,17 @@
+import Footer from "./Footer";
+import Header from "./Header";
+import Hero from "./Hero";
+import TaskBoard from "./Task/TaskBoard";
+
 export default function App() {
   return (
-    <h1 className="text-3xl text-blue-600 font-bold underline">Hello world!</h1>
+    <>
+      <Header></Header>
+      <div className="flex flex-col justify-center items-center">
+        <Hero></Hero>
+        <TaskBoard></TaskBoard>
+      </div>
+      <Footer></Footer>
+    </>
   );
 }
